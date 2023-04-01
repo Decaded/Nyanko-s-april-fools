@@ -26,6 +26,6 @@ function start() {
 	form.style.display = 'none';
 	clockText.style.display = 'block';
 	siteBackground.style.animation = 'pulse-body 6s ease infinite';
-	siteBackground.style.background = "url('/images/bg.jpg')";
+	siteBackground.style.backgroundImage = "url('/images/bg.jpg')";
 	footer.style.display = 'flex';
 }

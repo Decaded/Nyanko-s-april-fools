@@ -75,8 +75,9 @@ body {
 /* form */
 .form-box {
 	position: relative;
-	width: 450px;
-	height: 480px;
+	width: auto;
+	height: auto;
+	padding: 20px;
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, 0.5);
 	border-radius: 20px;
@@ -197,5 +198,33 @@ button {
 	}
 	100% {
 		background-color: #f00;
+	}
+}
+
+@media (max-width: 450px) {
+	.inputbox {
+		position: relative;
+		width: auto;
+		border-bottom: 2px solid #fff;
+	}
+
+	.clock-text {
+		width: 0 auto;
+		height: 0;
+		display: none;
+		font-size: 16px;
+		text-align: center;
+		color: white;
+	}
+
+	.clock-text p {
+		margin: 5px;
+	}
+
+	#time {
+		font-weight: bold;
+		color: silver;
+		font-size: 18px;
+		animation: rainbow-text 6s ease infinite;
 	}
 }

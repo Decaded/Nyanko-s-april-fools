@@ -1,0 +1,123 @@
+<!-- basic html website with black background, music and time counter in javascript -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<meta
+			name="description"
+			content="Nyanko's Giveaway"
+		/>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge"
+		/>
+		<meta
+			property="og:image"
+			content="https://nyanko.lailyren.art/images/nyanko_happy.png"
+		/>
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<meta
+			property="og:url"
+			content="https://nyanko.lailyren.art/giveaway/"
+		/>
+		<meta
+			property="og:title"
+			content="Nyanko's Giveaway"
+		/>
+		<meta
+			property="og:site_name"
+			content="Free hugs! And maybe cookies!"
+		/>
+		<link
+			rel="icon"
+			sizes="16x16"
+			type="image/png"
+			href="https://nyanko.lailyren.art/images/nyanko_happy.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/style.css"
+		/>
+		<title>The Rolling Nya</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<!-- fake form -->
+				<div class="form-box">
+					<div class="form-value">
+						<form
+							id="fake-form"
+							action=""
+						>
+							<h2>GIVEAWAY</h2>
+							<p>You must be on the Lailyren's server to be eligible for rewards.</p>
+							<p>Please insert your Discord Tag (Username#0000) below to enter the giveaway.</p>
+							<div class="inputbox">
+								<ion-icon name="logo-discord"></ion-icon>
+								<input required />
+								<label for="dtag"> Discord Tag:</label>
+							</div>
+							<button
+								class="start-button"
+								onclick="start()"
+							>
+								<span>ENTER</span>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- clock -->
+				<div class="clock-text">
+					<p>You were Rick Rolled for <span id="time">0</span> seconds.</p>
+					<p>Happy April Fool's Day!</p>
+				</div>
+			</div>
+			<div class="footer">
+				<p>
+					<a
+						href="https://github.com/Decaded/useless-website"
+						target="_blank"
+						>Github</a
+					>
+					||
+					<a
+						href="https://www.youtube.com/watch?v=lpiB2wMc49g"
+						target="_blank"
+						>Music used</a
+					>
+					|| &copy;
+					<a
+						href="https://decaded.ga"
+						target="_blank"
+						>Decaded
+					</a>
+				</p>
+			</div>
+		</div>
+		<!-- load timer -->
+		<script src="js/magic.js"></script>
+
+		<!-- automatically update date in footer -->
+		<script>
+			var d = new Date();
+			document.querySelector('.footer p').innerHTML += d.getFullYear();
+		</script>
+
+		<!-- icons -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>

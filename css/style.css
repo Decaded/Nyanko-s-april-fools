@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	font-family: 'poppins', sans-serif;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: luminosity;
+	background-image: url('/images/bg-1.jpg');
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock-text {
+	width: 0 auto;
+	height: 0;
+	display: none;
+	font-size: 4rem;
+	text-align: center;
+	color: white;
+}
+
+.clock-text p {
+	margin: 10px;
+}
+
+#time {
+	font-weight: bold;
+	color: silver;
+	font-size: 5rem;
+	animation: rainbow-text 6s ease infinite;
+}
+
+.clock-text,
+#time {
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.footer {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+/* form */
+.form-box {
+	position: relative;
+	width: 450px;
+	height: 480px;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-box p {
+	color: #fff;
+	max-width: 400px;
+}
+
+h2 {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+}
+
+.inputbox {
+	position: relative;
+	margin: 30px 0;
+	width: 390px;
+	border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1em;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+	top: -5px;
+}
+
+.inputbox input {
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0 35px 0 5px;
+	color: #fff;
+}
+
+.inputbox ion-icon {
+	position: absolute;
+	right: 8px;
+	color: #fff;
+	font-size: 1.2em;
+	top: 20px;
+}
+
+button {
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	background: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+@keyframes rainbow-text {
+	0% {
+		color: #f00;
+	}
+	16.6% {
+		color: #ff0;
+	}
+	33.2% {
+		color: #0f0;
+	}
+	49.8% {
+		color: #0ff;
+	}
+	66.4% {
+		color: #00f;
+	}
+	83.0% {
+		color: #f0f;
+	}
+	100% {
+		color: #f00;
+	}
+}
+
+/* body color pulse animation */
+@keyframes pulse-body {
+	0% {
+		background-color: #f00;
+	}
+	16.6% {
+		background-color: #ff0;
+	}
+	33.2% {
+		background-color: #0f0;
+	}
+	49.8% {
+		background-color: #0ff;
+	}
+	66.4% {
+		background-color: #00f;
+	}
+	83.0% {
+		background-color: #f0f;
+	}
+	100% {
+		background-color: #f00;
+	}
+}

@@ -39,7 +39,7 @@ body {
 	width: 0 auto;
 	height: 0;
 	display: none;
-	font-size: 4rem;
+	font-size: 30px;
 	text-align: center;
 	color: white;
 }
@@ -51,7 +51,7 @@ body {
 #time {
 	font-weight: bold;
 	color: silver;
-	font-size: 5rem;
+	font-size: 35px;
 	animation: rainbow-text 6s ease infinite;
 }
 
